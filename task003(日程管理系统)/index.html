@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css"  type="text/css"></head>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="inputCategory">
+		<h2>新增分类</h2>
+		<label for="CategoryName">选择主分类</label>
+		<select name="" id="CategoryName">
+			<option value="default">新增主分类</option>
+		</select><br>
+		<label for="nameOfNewCategory">新分类名称</label>
+		<input type="text" id='nameOfNewCategory'>
+		<span id="confirm">确认</span>
+		<span id="cancel">取消</span>
+	</div>
+	<div id="shadow"></div>
+	<div class="titleBar">
+		ToDo系统
+	</div>
+	<div class="main">
+		<div class="categoryTree">
+			<header>所有任务（<span id="numOfAllTasks"></span>）</header>
+			<div class="categoryList">
+				<p>分类列表</p>
+			</div>
+			<div class="addCategory">
+				<span class="fa fa-plus"></span>
+				<i>增加分类</i>
+			</div>
+		</div>	
+		<div class="taskList">
+			<div class="header">
+				<span class="defaultColorOfTag">所有</span>
+				<span>未完成</span>
+				<span>已完成</span>
+			</div>
+			<div class="taskListContent">
+				
+			</div>
+			<div class="addTask">
+				<span class="fa fa-plus"></span>
+				<i>新增任务</i>
+			</div>
+		</div>
+		<div class="contentMain">
+			<div class="header">
+				<input type="text" class="nameOfTask" placeholder="" readonly>
+				<span class="fa fa-check"></span>
+				<span class="fa fa-pencil"></span>
+			</div>
+			<div class="date">
+				任务日期: <input type="text" class="dateContent" readonly>
+			</div>
+			<div class="detail">
+				<textarea name="" id="" readonly></textarea>
+				<div class="btnArea">
+				<span class="save">保存修改</span>
+				<span class="forgive">放弃</span>
+			</div>
+			</div>
+
+		</div>
+	</div>
+	<script src="js/util.js"></script>
+	<script src="js/main_ES5.js"></script>
+</body>
+</html>

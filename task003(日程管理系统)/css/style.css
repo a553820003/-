@@ -1,0 +1,445 @@
+/*@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:200');*/
+*
+{
+    line-height: 1.8;
+
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    /*font-family: 'Source Sans Pro', Helvetica, sans-serif;*/
+    font-family: 'Arial','Microsoft YaHei','黑体','宋体',sans-serif;
+    /*font-family:'Source Sans Pro', "Arial","Microsoft YaHei","黑体","宋体",sans-serif;*/
+    font-weight: 500;
+    display: none;
+}
+i
+{
+    font-style: normal;
+}
+::selection
+{
+    color: #fff;
+    background: #fb90b7;
+}
+.fa
+{
+    cursor: pointer;
+}
+.titleBar
+{
+    font-size: 1.7rem;
+    font-weight: 800;
+    line-height: 4rem;
+
+    height: 4rem;
+    padding-left: 2rem;
+
+    color: #fff;
+    background: #f85f73;
+    box-shadow: 0 0 4px 1px #f85f73;
+}
+.categoryTree,
+.taskList
+{
+    float: left;
+}
+.categoryTree
+{
+    position: relative;
+
+    width: 250px;
+    height: 100%;
+
+    background: #928a97;
+    box-shadow: 0 2px 1px 1px #283c63;
+}
+.categoryTree header
+{
+    line-height: 2.5;
+
+    padding-left: 20px;
+
+    cursor: pointer;
+
+    color: #fff;
+    background: #fb90b7;
+}
+.categoryTree .addCategory
+{
+    line-height: 3rem;
+
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+
+    cursor: pointer;
+    text-align: right;
+
+    box-shadow: -1px 0 1px 1px #283c63;
+}
+.addCategory i
+{
+    padding-right: 2em;
+}
+.categoryTree .categoryList > *
+{
+    padding-left: 20px;
+}
+.taskList
+{
+    position: relative;
+
+    width: 250px;
+    height: 100%;
+
+    background: #eee;
+    box-shadow: 0 1px 1px 1px #283c63;
+}
+.taskList .header
+{
+    line-height: 2;
+
+    height: 3.5rem;
+
+    color: #fff;
+    border-bottom: dashed 1px #283c63;
+}
+
+.taskList .header span
+{
+    font-size: .9rem;
+
+    display: inline-block;
+
+    width: 3rem;
+    margin-top: 10px;
+    margin-left: 12px;
+    padding: 5px 8px;
+
+    cursor: pointer;
+    transition: ease-in-out .2s color,ease-in-out .2s background;
+    text-align: center;
+
+    background: #928a97;
+}
+.taskList .header span:hover
+{
+    color: #fff;
+    background: #f85f73;
+}
+.defaultColorOfTag
+{
+    color: #fff !important;
+    background: #f85f73 !important;
+}
+.addTask
+{
+    line-height: 3rem;
+
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+
+    cursor: pointer;
+    text-align: right;
+
+    box-shadow: 0 0 1px 1px #283c63 ;
+}
+.addTask i
+{
+    padding-right: 2em;
+}
+.contentMain
+{
+    height: 100%;
+    padding-left: 500px;
+
+     background-color: #fff;
+
+}
+.contentMain .header
+{
+    line-height: 3.5rem;
+
+    height: 3.5rem;
+
+    background: #928a97;
+}
+.contentMain .header input
+{
+    line-height: 2rem;
+
+    width: 15rem;
+    margin-left: 1rem;
+
+    color: black;
+    border: 0;
+    background: transparent;
+    font-size: 1rem;
+}
+
+.contentMain .fa
+{
+    line-height: 3.5rem;
+
+    float: right;
+
+    margin-right: 1rem;
+
+    vertical-align: middle;
+    display: none;
+}
+.contentMain .date
+{
+    line-height: 3.5rem;
+
+    padding-left: 1rem;
+
+    background: #eee;
+}
+.date input
+{
+	 font-size: 1rem;
+    width: 10rem;
+
+    text-align: center;
+
+    border: 0;
+    background: transparent;
+}
+.contentMain textarea
+{
+    line-height: 1.2;
+	
+    width: 100%;
+    border: 0;
+    border-left: 1px solid #283C63;
+    outline: none;
+    font-size: 1.1rem;
+    
+    padding: 1rem;
+  
+    
+
+}
+.detail
+{
+    position: relative;
+}
+.detail .btnArea
+{
+    line-height: 2.5rem;
+
+    position: absolute;
+    right: 2rem;
+    bottom: -3rem;
+
+    height: 3rem;
+}
+.detail .save,
+.detail .forgive
+{
+    font-size: .9rem;
+
+   
+
+    width: 4rem;
+    margin-top: 10px;
+    margin-left: 12px;
+    padding: 5px 8px;
+
+    cursor: pointer;
+    transition: ease-in-out .2s color,ease-in-out .2s background;
+    text-align: center;
+    display: none;
+}
+.detail .forgive
+{
+    color: #fff;
+    background: #928a97;
+}
+.detail .save
+{
+    color: #fff;
+    background: #fb90b7;
+}
+.detail .save:hover,
+.detail .forgive:hover
+{
+    color: #fff;
+    background: #f85f73;
+}
+#inputCategory
+{
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+
+    display: none;
+
+    width: 300px;
+    padding: 1rem 1.5rem;
+
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+    background: #fff;
+    box-shadow: 0 0 10px 1px #f85f73;
+}
+#inputCategory h2
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+#inputCategory *
+{
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+}
+#inputCategory span
+{
+    font-size: .9rem;
+
+    display: inline-block;
+
+    width: 3rem;
+    margin-top: 10px;
+    margin-left: 12px;
+    padding: 5px 8px;
+
+    cursor: pointer;
+    transition: ease-in-out .2s color,ease-in-out .2s background;
+    text-align: center;
+
+    color: #fff;
+    background: #928a97;
+}
+#inputCategory span:hover
+{
+    color: #fff;
+    background: #f85f73;
+}
+#inputCategory select
+{
+    font-size: .8rem;
+
+    width: 173px;
+    height: 27px;
+
+    text-align: center;
+}
+
+#shadow
+{
+    position: absolute;
+    z-index: 998;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,.3);
+}
+
+/*以下是动态样式*/
+.category,
+.subCategory
+{
+    cursor: pointer;
+}
+.category:hover
+{
+    transition: ease-in-out .2s background;
+
+    background: rgba(255,255,255,.4);
+}
+.subCategory:hover
+{
+    transition: ease-in-out .2s background;
+
+    background: rgba(255,255,255,.4);
+}
+.category:hover .fa-trash-o
+{
+    display: inline-block;
+}
+.subCategory:hover .fa-trash-o
+{
+    display: inline-block;
+}
+.category i,
+.subCategory i
+{
+    margin-right: .3rem;
+}
+.category .fa-trash-o,
+.subCategory .fa-trash-o
+{
+    display: none;
+    float: right;
+
+    margin: 6px 1rem;
+
+    vertical-align: middle;
+}
+.subCategory
+{
+    padding-left: 2rem !important;
+}
+.highLight
+{
+    transition: ease-in-out .2s background;
+
+    background: rgba(255,255,255,.4);
+}
+/*tasklist*/
+.taskNode
+{
+    font-size: 15px;
+    line-height: 2;
+
+    padding-left: 1rem;
+
+    cursor: pointer;
+}
+.taskNode:hover
+{
+    transition: ease-in-out .3s background;
+
+    background: #fff;
+}
+.taskNodeHighLight
+{
+    transition: ease-in-out .3s background;
+
+    background: #fff;
+}
+.dateNode
+{
+    font-size: 15px;
+    line-height: 2;
+
+    padding-left: .7rem;
+
+    background: #cdcdcd;
+}
+.finishedTaskNode
+{
+    color: #f85f73;
+}
+.taskListContent .fa-check
+{
+    display: inline-block;
+    float: left;
+
+    margin-top: 7px;
+    margin-right: .3rem;
+
+    vertical-align: middle;
+}

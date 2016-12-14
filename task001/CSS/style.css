@@ -1,0 +1,814 @@
+/*@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:200');*/
+@import url(font-awesome.min.css);
+body
+{
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    background: #e0e0e0;
+}
+a
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+
+
+/*header*/
+
+.header h3
+{
+    font-size: 1.3rem;
+}
+.wrap
+{
+    width: 980px;
+    margin: 0 auto;
+}
+.header
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 4rem;
+    margin: 0;
+    padding: 0;
+
+    background: #e91e63;
+}
+.header h3
+{
+    display: inline-block;
+
+    margin: 2rem 0 1rem 7rem;
+
+    color: #fff;
+}
+div
+{
+    margin: 0;
+    padding: 0;
+}
+.item_list
+{
+    float: right;
+
+    margin-top: 1rem;
+    margin-right: 6rem;
+
+    text-align: right;
+
+    color: #fff;
+}
+
+.item_list ul li
+{
+    float: left;
+
+    margin-right: 1rem;
+}
+.item_list ul a
+{
+    font-size: 1rem;
+
+    color: #fff;
+}
+.LOGO
+{
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+}
+
+/*为什么无效!!!???*/
+@media screen and(max-width: 980px)
+{
+}
+
+/*banner*/
+
+.banner
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 400px;
+
+    background-image: url(../img/pic2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner .content
+{
+    position: absolute;
+    bottom: 0;
+    left: 7rem;
+
+    width: 17rem;
+
+    background: rgba(255,255,255,.25);
+}
+.content h3
+{
+    font-size: 1rem;
+
+    margin-bottom: .5rem;
+
+    text-indent: 1rem;
+
+    color: #fff;
+}
+.content p
+{
+    font-size: .8rem;
+
+    margin: 0;
+    margin-bottom: 1rem;
+
+    text-indent: 2em;
+
+    color: #fff;
+}
+.main
+{
+    display: flex;
+    overflow: hidden;
+
+    height: 400px;
+
+    background: #eee;
+
+    justify-content: center;
+}
+.box img
+{
+    width: 250px;
+    margin: 10px 10px 5px 10px;
+}
+.box
+{
+    width: 270px;
+    height: 300px;
+    margin: .5rem;
+
+    background: #fafafa;
+}
+.box p
+{
+    font-size: .8rem;
+
+    margin: 0 15px;
+
+    text-indent: 2em;
+}
+
+
+/*selef_intro*/
+.self_intro
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 500px;
+
+    background: #fafafa;
+}
+.avatar img
+{
+    width: 8rem;
+    height: 8rem;
+
+    border-radius: 100%;
+}
+.avatar
+{
+    width: 10rem;
+    margin: -2rem auto 0;
+
+    text-align: center;
+}
+#grey
+{
+    height: 2rem;
+
+    background: #eee;
+}
+.self_intro p
+{
+    font-size: .8rem;
+    line-height: 2;
+
+    width: 550px;
+    margin: 0 auto;
+
+    text-indent: 2em;
+}
+
+/*footer*/
+footer
+{
+    overflow: hidden;
+
+    background: #212121;
+}
+footer header
+{
+    height: 1.5rem;
+    margin: 0 auto;
+    padding-top: .5rem;
+
+    text-align: center;
+    vertical-align: center;
+}
+footer .footer_content
+{
+    clear: left;
+
+    border-top: solid 1px #424242;
+}
+footer header ul
+{
+    display: inline-block;
+}
+footer header ul li
+{
+    font-size: .8rem;
+
+    float: left;
+
+    margin-right: 1rem;
+}
+footer h3
+{
+    font-size: .9rem;
+    font-weight: 400;
+
+    color: #fff;
+}
+footer a
+{
+    font-size: .8rem;
+
+    color: #fff;
+}
+.footer_content
+{
+    display: flex;
+
+    padding-top: 2rem;
+}
+.item
+{
+    width: 20%;
+
+    text-align: center;
+}
+footer ul
+{
+    margin: 0;
+    padding: 0;
+}
+.bottom p
+{
+    font-size: .8rem;
+
+    margin-top: 5rem;
+
+    color: #fff;
+}
+.bottom
+{
+    text-align: center;
+}
+a:hover
+{
+    background: rgba(255,255,255,.25);
+}
+
+
+
+/*blog
+
+main*/
+
+.blog_main,
+.gallery
+{
+    display: flex;
+
+    padding: 1rem 5% 0 10%;
+
+    background: #eee;
+}
+.blog_main p,
+h4
+{
+    font-size: 14px;
+
+    color: #212121;
+}
+.blog_main p
+{
+    line-height: 1.6;
+
+    margin: 0;
+}
+.blog_main h4
+{
+    margin-top: 0;
+    padding: 0;
+}
+.blog_main h3
+{
+    font-size: 16px;
+
+    margin-bottom: .5rem;
+    margin-left: -1em;
+    padding: 0;
+
+    color: #f06292;
+}
+
+.blog_main .main_item
+{
+    position: relative;
+
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    background: #fff;
+}
+.article
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 75%;
+
+    align-items: center;
+}
+.aside
+{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+    width: 30%;
+
+    align-items: center;
+}
+.time
+{
+    float: right;
+
+    color: #9e9e9e !important;
+}
+.label_time
+{
+    position: absolute;
+    top: 20px;
+    left: -48px;
+
+    width: 2rem;
+    padding: .5rem;
+
+    text-align: center;
+
+    background: #e91e63;
+}
+.css
+{
+    position: absolute;
+    top: 56px;
+    left: -48px;
+
+    width: 2rem;
+    padding: .5rem;
+
+    text-align: center;
+
+    background: #f06292;
+}
+::selection
+{
+    background: #ffcdd2;
+}
+/*  设置选择文字时的背景颜色*/
+.blog_bottom span
+{
+    font-size: 14px;
+
+    margin-right: .5rem;
+    padding: 10px 15px;
+
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+
+    background: #fff;
+}
+.blog_bottom span:hover
+{
+    color: #fff;
+    background: #e91e63;
+}
+.blog_bottom
+{
+    margin-bottom: 20rem;
+}
+
+/*aside*/
+
+.aside
+{
+    display: flex;
+    flex-direction: column;
+}
+.search
+{
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    white-space: nowrap;
+    letter-spacing: 0;
+
+    background: #fff;
+}
+.search input
+{
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+
+    border: #bdbdbd solid 1px;
+}
+.search label
+{
+    line-height: 2rem;
+
+    height: 2rem;
+    padding: .4rem;
+
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+
+    background: #eee;
+}
+.search label:hover
+{
+    color: #fff;
+    background: #e91e63;
+}
+
+.article_type
+{
+    width: 239px;
+
+    background: #fff;
+}
+.article_type div
+{
+    height: 3rem;
+
+    transition: border-left ease-in-out .3s;
+    vertical-align: center;
+
+    border-bottom: solid 2px    #eee;
+    border-left: solid 3.5px     #f48fb1;
+}
+.article_type div:hover
+{
+    border-left: solid 3.5px    #e91e63;   ;
+}
+.article_type p
+{
+    font-weight: 400;
+    line-height: 3rem;
+
+    text-indent: 1rem;
+}
+
+.Tags
+{
+    line-height: 2rem;
+
+    width: 239px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    padding-left: 1rem;
+
+    text-align: left;
+
+    background: #fff;
+}
+.Tags span
+{
+    font-size: 1.2rem;
+
+    color: #f06292;
+}
+.Tags strong
+{
+    font-size: 2rem;
+
+    color: #e91e63;
+}
+
+
+/*gallery*/
+.gallery{
+	padding-left: 5% !important;
+}
+/*main*/
+
+
+.gallery_main
+{
+    	
+
+
+    width: 75%;
+
+    align-items: center;
+}
+.gallery_tags li{
+	display: inline-block;
+	padding: 15px 20px 20px;
+	line-height: 0.2rem;
+	background: #fff;
+	margin-right: 0 !important;
+}
+.gallery_tags{
+	margin-bottom: 0;
+}
+.gallery_tags ul {
+	margin-left: -2.5rem;
+	
+}
+.red{
+	border-top: 3px solid #f44336;
+}
+.blue{
+	border-top: #3f51b5 3px solid;
+}
+.purple{
+	border-top: #9c27b0 3px solid;
+}
+.pic_area{
+	background: #fff;
+	margin-top: -1rem;
+	
+}
+.gallery_main img{
+	
+}
+
+.column1{
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+}
+.column1 .column{
+	width: 50% !important;
+}
+.column{
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+}
+.pic_area{
+	display: flex;
+	overflow: hidden;
+}
+.pic_box .pic{
+	width: 100%;
+}
+.pic_box1 img,.pic_box img{
+	width: 100%;
+}
+.pic_box1,.pic_box{
+	margin:0.5rem;
+}
+.pic_content{
+	background: #bdbdbd;
+	display: flex;
+
+}
+.pic_content div{
+	margin-top: 0.5rem;
+	margin-right: 0.5rem;
+}
+.pic_box .pic_content span,.pic_box1 .pic_content span{
+	border-radius: 100%;
+	border: 1px solid black;
+	height: 1.5rem;
+	width: 1.5rem !important;
+	padding: 0.2rem;
+	font-size: 1rem;
+	text-align: center;
+	margin:0.5rem;
+	display: inline-block;
+
+}
+.pic_box1 h3,.pic_box h3{
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+.pic_box1 p,.pic_box p{
+	font-size: 0.8rem;
+	margin-top: 0rem;
+}
+.pic {
+	margin-bottom:-0.3rem;
+}
+.pic_bottom{
+	background: #fff;
+	text-align: center;
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
+	line-height: 2.5rem;
+	cursor: pointer;
+	transition: ease-in-out 0.3s background,ease-in-out 0.3s color;
+	margin-bottom: 10rem;
+}
+.pic_bottom:hover{
+	background: #ec407a;
+	color: #fff;
+}
+.pic_bottom i{
+	margin-right: 0.4rem;
+	color:  #bdbdbd;
+}
+ /*aside*/
+
+ .gallery .aside .search{
+	margin-top: 3.5rem;
+ }
+ .rank{
+ 	background: #fff;
+ 	width: 238px;
+
+
+ }	
+ .rank h3{
+ 	font-size: 0.9rem;
+ 	margin: 0.5rem 0.5rem 0.5rem 1rem;
+ 	font-weight: 400;
+ }
+ .rank span{
+ 	font-size: 0.8rem;
+ }
+ .rank_item{
+ 	margin: 0.5rem 0.5rem 0.5rem 1rem;
+ 	vertical-align: middle;
+
+ }
+ .rank_item .circle{
+ 	height: 1.2rem;
+ 	width: 1.2rem;
+ 	padding: 0.2rem;
+ 
+ 	border-radius: 100%;
+ 	background: #ec407a;
+ 	display: inline-block;/* 这个属性至关重要,不然就不能正常设置宽度*/
+ 	text-align: center;
+ 	color: #fff;
+ }
+ .rank_item .tangle{
+ 	width: 6rem;
+ 	height: 1rem;
+	
+ 	border:#ec407a solid 1px;
+ 	display: inline-block;
+ 	vertical-align: middle;
+ 	margin:0 0.5rem;
+ }
+ .rank_item i{
+ 	height: 100%;
+ 	background: #ec407a ;
+ 	display: inline-block;
+ }
+ .fill1{
+ 	width: 100%;
+ }
+ .fill2{
+ 	width: 20%;
+ }
+ .fill3{
+ 	width: 80%;
+ }
+ .fill4{
+ 	width: 50%;
+ }
+ .fill5{
+ 	width: 10%;
+ }
+ .name{
+ 	font-weight: bold !important;
+ }
+
+
+/*about*/
+.divide{
+	z-index: -1;
+	background: #e0e0e0;
+	width: 5px;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 50%;
+	margin-left: -2.5px;
+}
+.about{
+	background: #fff;
+	margin-top: 5rem;
+	position: relative;
+	z-index: -2;
+}
+.about .avatar{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	
+}
+.about .avatar-lg img{
+	border: #e0e0e0 solid 7px;
+	margin-top: -3rem !important;
+}
+.about .avatar-sm img{
+	width: 6rem;
+	height:6rem;
+	border: #e0e0e0 solid 4px;
+}
+.about .avatar img{
+	
+}
+.left span{
+	font-size: 20px;
+}
+.about_item{
+	position: relative;
+
+}
+.left{
+	position: absolute;
+	top: 1rem;
+	left: 35%;
+}
+.right{
+	position: absolute;
+	top: 0;
+	left:55%;
+	max-width: 15rem;
+	font-size: 14px;
+}
+.about_item_1{
+	height: 8rem;
+}
+.about_item_1 .right{
+	text-indent: 2em;
+}
+.about_item_2{
+	height: 6rem;
+}
+.about_item_3{
+	height: 8rem;
+}
+.about_item_4{
+	height: 15rem;
+}
+.center{
+	left:50%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	padding-top: 0.4rem;
+
+}
+.center span{
+	width: 3rem;
+	padding: 0.2rem 0.3rem;
+	border: 4px solid #e0e0e0;
+	text-align: center;
+	border-radius: 20%;
+	margin-left: -2rem;
+	background: #fff;/*如果这里不设置背景色,那么中间分割线就会出现在透明背景上*/
+
+}
+.about_item_4  .center{
+	padding-top: 0.9rem !important;
+}
+.about_item_4 .center span{
+	margin-bottom: 1rem;
+}
+.about_item_3 .center span{
+	margin-bottom: 0.5rem;
+}

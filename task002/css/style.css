@@ -1,0 +1,195 @@
+.red
+{
+    color: #f44336;
+}
+.blue
+{
+    color: blue;
+}
+#list li
+{
+    width: 5rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+
+    background: red;
+}
+.box_shadow
+{
+    box-shadow: 0 0 5px 2px blue;
+}
+.wrap
+{
+    position: relative;
+
+    width: 70%;
+    margin: 2rem auto;
+}
+.btn
+{
+    display: inline-block;
+
+    margin: 1rem;
+    padding: .8rem;
+
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+
+    color: #fff;
+    border-radius: 10%;
+    background: #03a9f4;
+}
+.btn:hover
+{
+    background: #0277bd;
+}
+input
+{
+    font-size: 1.2rem;
+
+    padding: .5rem;
+}
+textarea
+{
+    font-size: 1.2rem;
+
+    padding: .5rem;
+}
+#output
+{
+    width: 20rem;
+    height: 15rem;
+
+    background: #eee;
+}
+.info
+{
+    color: red;
+}
+
+/*轮播图*/
+
+.imgRotation
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 1000px;
+    height: 500px;
+
+    white-space: nowrap;
+    letter-spacing: 0;
+}
+.imgRotation img
+{
+    display: inline-block;
+
+    width: 100%;
+    height: 100%;
+    margin-right: -.5em; /*这里如果没外边距的话,img元素之间会产生一些空隙*/
+}
+.wrap h1
+{
+    text-align: center;
+    letter-spacing: 1rem;
+}
+.circleList
+{
+    font-size: 2.5rem;
+
+    position: absolute;
+    bottom: 2rem;
+    left: 27%;
+
+    text-align: center;
+}
+.circleList a
+{
+    display: inline-block;
+
+    width: 4rem;
+    height: 4rem;
+
+    text-decoration: none;
+
+    color: black;
+    border-radius: 100%;
+    background: rgba(255,255,255,.6);
+}
+.circleList span
+{
+    vertical-align: middle;
+}
+a.active
+{
+    color: #fff ;
+    background: #e91e63;
+}
+.container
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 1000px;
+    height: 500px;          /*父容器必须设置好宽高才能使用 overflow: hidden;*/
+}
+
+/*输入提示框*/
+input{
+	width: 13.5rem;
+}
+li.active
+{
+    
+    background: #eee;
+}
+span{
+	font-weight: 800;
+	color: #e91e63;
+}
+ul{
+	list-style: none;
+}
+.boxContent ul{
+	width: 218px;
+	margin: 0;
+	padding: 0;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 0.5rem;
+	display: none;
+}
+.boxContent ul li{
+	margin-bottom: 0.5rem;
+}
+
+
+/*实现拖拽界面*/
+.dragBox{
+    height: 30rem;
+    width: 45rem;
+    background: #eee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.containerLeft,.containerRight{
+    width: 30%;
+    background: #FEFAEC;
+    height: 80%;
+    box-shadow: 0 0 5px 1px #625772;
+}
+.item1,.item2{
+    
+    height: 2rem;
+    border:1px solid #eee;
+}
+.item1{
+    background: #F38181;
+}
+.item2{
+    background: #A9EEE6;
+}
